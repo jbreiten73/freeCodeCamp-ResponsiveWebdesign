@@ -1,1 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <link rel="stylesheet" href="stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Survey form ui created for the FreeCodeCamp's Responsive Web Design Certification.">
+  <title>Survey Form</title>
+</head>
 
+<body>
+<div  class="container"  >
+  <div  class="header" >
+    <div  class="column-header" >
+      <h1 id="title">Course Feedback</h1>
+        <p id="description">We would like to know your opinion about the course.</p>
+      </div>
+  </div>
+  
+  <form id="survey-form">
+    <div  class="form-group"  >
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    
+    <div class="form-group" >
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control" 
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    
+    <div class="form-group">
+      <label id="number-label" for="number">Age (optional)</label>
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="11"
+        max="111"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    
+    <div class="form-group" >
+      <p>Employment Status</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select your current status</option>
+        <option value="student">Student</option>
+        <option value="job-full">Employed Full Time</option>
+        <option value="job-part">Employed Part Time</option>
+        <option value="self-employed">Self-employed</option>
+        <option value="unemployed">Unemployed</option>
+        <option value="retired">Retired</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+  
+    <div class="form-group">
+      <p>Overall, how would you rate the course?</p>
+      <fieldset>
+      <label>
+        <input
+          name="user-rate"
+          value="excellent"
+          type="radio"
+          class="input-radio"
+          checked
+        />Excellent</label>
+      <label>
+        <input
+          name="user-rate"
+          value="very-good"
+          type="radio"
+          class="input-radio" 
+        />Very good</label>
+
+      <label>
+        <input
+          name="user-rate"
+          value="good"
+          type="radio"
+          class="input-radio" 
+        />Good</label>
+      
+      <label>
+        <input
+          name="user-rate"
+          value="fair"
+          type="radio"
+          class="input-radio" 
+        />Fair</label>
+      
+      <label>
+        <input
+          name="user-rate"
+          value="poor"
+          type="radio"
+          class="input-radio" 
+        />Poor</label>
+       </fieldset>
+    </div>
+    
+     <div class="form-group" >
+      <p>How useful were the course materials (readings, videos, assignments, etc)?</p>
+      <label>
+       <fieldset>
+        <input
+          name="materials-rate"
+          value="extremely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Extremely useful</label>
+      <label>
+        <input
+          name="materials-rate"
+          value="very"
+          type="radio"
+          class="input-radio" 
+        />Very useful</label>
+
+      <label>
+        <input
+          name="materials-rate"
+          value="somewhat"
+          type="radio"
+          class="input-radio" 
+        />Somewhat useful</label>
+      
+      <label>
+        <input
+          name="materials-rate"
+          value="not-so"
+          type="radio"
+          class="input-radio"
+        />Not so useful</label>
+      
+      <label>
+        <input
+          name="materials-rate"
+          value="no"
+          type="radio"
+          class="input-radio" 
+        />Not useful at all</label>
+       </fieldset>
+    </div>
+    
+    <div class="form-group" >
+      <p>Would you recommend the course to a friend?</p>
+      <label>
+       <fieldset>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio" 
+          checked
+        />Definitely</label>
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label>
+
+      <label>
+        <input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio" 
+        />Not sure</label>
+      </fieldset>
+    </div>
+
+    <div class="form-group"
+      <p>
+        Which programming language(s) would you like to learn next? (Check all that apply)
+      </p>
+
+      <label>
+      <fieldset>
+        <input
+          name="prog"
+          value="javascript"
+          type="checkbox"
+          class="input-checkbox"
+        />Javascript</label>
+      
+      <label>
+        <input
+          name="prog"
+          value="python"
+          type="checkbox"
+          class="input-checkbox"
+        />Python</label>
+      
+      <label>
+        <input
+          name="prog"
+          value="php"
+          type="checkbox"
+          class="input-checkbox" 
+        />PHP</label>
+      
+      <label>
+        <input
+          name="prog"
+          value="sql"
+          type="checkbox"
+          class="input-checkbox" 
+        />SQL</label>
+     
+      <label>
+        <input
+          name="prog"
+          value="java"
+          type="checkbox"
+          class="input-checkbox"
+        />Java</label>
+      
+      <label>
+        <input
+          name="prog"
+          value="c++"
+          type="checkbox"
+          class="input-checkbox"
+        />C++</label>
+      
+      <label>
+        <input
+          name="prog"
+          value="other"
+          type="checkbox"
+          class="input-checkbox"
+         />Other</label>
+      </fieldset>
+  
+
+    </div>
+
+    <div class="form-group"
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea" 
+        name="comment"
+        placeholder="Enter your comment here..."></textarea>
+    </div>
+
+    <div class="form-group" >
+      <button type="submit" id="submit" class="submit-button" >
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+ <section class="footer" >
+    <p> Design and Development: Julia Breitenbruch </p>
+  </section>
+
+</body>
+
+</html>
